@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My first JS test</title>
+</head>
+<body>
+    <div class="messages-container">
+        <h1>Messages</h1>
+        <div class="content-box">
+            <div class="message m1" id="messageid">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <p>Hey what's up?</p>
+            </div>
+        </div>
+    </div>
+    <div class="input-container">
+        <form action="script.js" method="post" class="send-messages-form" id="send-messages-formid">
+            <input type="text" name="send-messages-input" id="send-messages-inputid" placeholder="Type here...">
+            <input type="submit" id="submitid">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

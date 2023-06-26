@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F1C7B9;
+}
+
+.messages-container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    background-color: white;
+    width: 320px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.message ion-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.input-container{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 35px;
+}
+.send-messages-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.send-messages-form input{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
