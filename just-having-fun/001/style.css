@@ -22,10 +22,19 @@ body{
 
     background-color: white;
     width: 320px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content-box{
+    height: 200px;
+    overflow-y: scroll;    
+}
+.content-box::-webkit-scrollbar{
+    display: none;
 }
 
 h1{
@@ -39,7 +48,7 @@ h1{
     display: flex;
     align-items: center;
     padding: 10px;
-    margin: 10px;
+    margin: 15px;
     border: 1px solid black;
 }
 
@@ -55,19 +64,32 @@ h1{
     bottom: 5%;
     transform: translate(-50%, -50%);
 
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     width: 320px;
     padding: 20px;
-    border-radius: 35px;
+    border-radius: 50px;
 }
-.send-messages-form{
-    display: flex;
-    justify-content: space-between;
-}
-
-.send-messages-form input{
+input{
     background-color: transparent;
     border: 0;
     outline: none;
 }
 
+.input-container ion-icon{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    transition: .3s;
+}
+
+.input-container ion-icon:hover{
+    transform: scale(120%, 120%);
+    box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.137);
+}
+
+.input-container ion-icon:active{
+    box-shadow: inset 2.5px 2.5px 5px rgba(0, 0, 0, 0.137);
+}
