@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Box Shadow Card</title>
+</head>
+<body>
+    <div class="title">
+        <h1>&#x1F34C; Box Shadow App</h1>
+    </div>
+    <div class="card-container">
+        <div class="visual-container">
+            <div class="model-box"></div>
+        </div>
+        <div class="tools-container">
+            <!--left-side-->
+            <div class="left-side-tools">
+                <div class="tool hs">
+                    <label for="hshadow">Horizontal Shadow:</label><br>
+                    <input type="range" name="hshadow" id="hshadow" max="50" min="-50" onchange="ApplyChanges()">
+                </div>
+                <div class="tool b">
+                    <label for="blur">Blur Radius:</label><br>
+                    <input type="range" name="blur" id="blur" max="50" min="0" value="0" onchange="ApplyChanges()">
+                </div>
+                <br>
+                <div class="tool is">
+                    <label for="insetshadow">Inset Shadow:</label>
+                    <input type="checkbox" name="insetshadow" id="insetshadow">
+                </div>
+            </div>
+            <!--right-side-->
+            <div class="right-side-tools">
+                <div class="tool vs">
+                    <label for="vshadow">Vertical Shadow:</label><br>
+                    <input type="range" name="vshadow" id="vshadow" max="50" min="-50" onchange="ApplyChanges()">
+                </div>
+                <div class="tool sr">
+                    <label for="spread">Spread Radius:</label><br>
+                    <input type="range" name="spread" id="spread" max="50" min="0" value="0" onchange="ApplyChanges()">
+                </div>
+                <br>
+                <div class="tool sc">
+                    <label for="shadowcolor">Shadow Color:</label>
+                    <input type="color" name="shadowcolor" id="shadowcolor" value="#000000" onchange="ApplyChanges()">
+                </div>
+            </div>
+        </div>
+        <div class="results-container">
+            <div class="result-text">
+                <p>...</p>
+            </div>
+            <input type="button" value="Copy it!" name="copybutton" id="copybutton" onclick="Copy()" onmouseleave="returnCopyText()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
