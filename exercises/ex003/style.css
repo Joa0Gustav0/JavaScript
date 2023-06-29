@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(112, 162, 255);
+}
+
+.container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.075);
+    padding: 10px;
+}
+.container>h1{
+    margin: auto;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.inputs-container{
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+.inputs{
+    padding: 5px 0;
+}
+.by>input{
+    height: 25px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.sx{
+    display: flex;
+}
+.radio-input{
+    display: flex;
+    margin: 0 10px;
+}
+.vi>input{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+}
+.vi>input:hover{
+    color: rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+}
+
+.inputs-container, .visual-container{
+    margin: 10px 0;
+}
+
+.visual-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-container>img{
+    margin: 10px 0;
+    border-radius: 100%;
+}
+

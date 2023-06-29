@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Identity Verifier</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Identity Verifier</h1>
+        <div class="inputs-container">
+            <div class="inputs by">
+                <label for="">Birth year: </label><input type="number" name="birthyear" id="birthyear">
+            </div>
+            <div class="inputs sx">
+                Sex: 
+                <div class="radio-input">
+                    <input type="radio" class="malesex" name="sex" id="sex">
+                    <label for="sex"> Male</label>
+                </div>
+                <div class="radio-input">
+                    <input type="radio" class="femalesex" name="sex" id="sex">
+                    <label for="sex"> Female</label>
+                </div>
+            </div>
+            <div class="inputs vi">
+                <input type="button" value="Verify it!" onclick="getInformations()" onmouseleave="returnButton()">
+            </div>
+        </div>
+        <div class="visual-container">
+            <h2>Detected: </h2>
+            <img src="media/profile-none.png" width="200px" height="200px" alt="...">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
