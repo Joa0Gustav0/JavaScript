@@ -8,17 +8,20 @@
 </head>
 <body>
     <div class="messages-container">
-        <h1>Messages</h1>
-        <div class="content-box">
-            <div class="message m1" id="messageid">
-                <ion-icon name="person-circle-outline"></ion-icon>
-                <p>Hey what's up?</p>
-            </div>
+        <h1>📝 Todo list</h1>
+        <h2>Uncompleted:</h2>
+        <div class="uncompleted-todos">
+            
         </div>
+        <h2>Completed:</h2>
+        <div class="completed-todos">
+
+        </div>
+        
     </div>
     <div class="input-container">
-        <input type="text" name="send-messages-input" id="send-messages-inputid" placeholder="Type here..." maxlength="20">
-        <ion-icon name="paper-plane" onclick="CreateTask()"></ion-icon>
+        <input type="text" name="send-messages-input" id="send-messages-inputid" placeholder="Insert a task..." maxlength="50" autocomplete="off">
+        <ion-icon name="paper-plane" onclick="newTodo()"></ion-icon>
     </div>
     
     <script src="script.js"></script>
