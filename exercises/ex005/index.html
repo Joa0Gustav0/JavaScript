@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>🔢 Counter</h1>
+    <div class="container">
+        <div class="inputs-container">
+            <div class="inputs">
+                <label for="start-number">Start: </label><input type="number" class="start-number">
+            </div>
+            <div class="inputs">
+                <label for="end-number">End: </label><input type="number" class="end-number">
+            </div>
+            <div class="inputs">
+                <label for="steps-number">Steps: </label><input type="number" class="steps-number">
+                </label>
+            </div>
+            
+            <input type="button" class="cibutton" value="Count it!" onclick="countIt()">
+        </div>
+        <div class="results-container">
+            <p>Preparing the countage...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

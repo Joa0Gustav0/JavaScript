@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Numbers Watchers</title>
+</head>
+<body>
+    <h1>🔍 Number Watchers</h1>
+    <div class="container">
+        <div class="inputs-container">
+            <div class="insert-number-input">
+                <label for="insert-number">Insert a number: </label>
+                <input type="number" name="insert-number" id="insert-number" class="insert-number">
+            </div>
+            <input type="button" value="Add number!" class="anbutton" onclick="addNumber()">
+        </div>
+        <div class="visual-container">
+            <div class="visual-box">
+
+            </div>
+            <input type="button" value="Verify it!" class="vibutton" onclick="verifyNumbers()">
+        </div>
+        <div class="result-container">
+            <p class="na"></p>
+            <p class="hn"></p>
+            <p class="ln"></p>
+            <p class="soan"></p>
+            <p class="navr"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

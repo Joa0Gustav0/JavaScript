@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 300px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.185);
+}
+.container{
+    margin-top: 30%;
+    width: 600px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.185);
+    border-radius: 15px;
+    padding: 10px;
+}
+.inputs-container, .visual-container{
+    padding: 5px;
+    padding: 10px;
+}
+.inputs-container{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-number{
+    padding: 2.5px 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+    outline: none;
+}
+.gibutton{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+}
+.gibutton:hover{
+    color: rgba(255, 255, 255, 0.459);
+}
+
+.results-box{
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 150px;
+    height: 145px;
+    overflow-y: scroll;
+}
+.results-box::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    margin: 15px;
+}
+
+.container{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.inputs-container, 
+.visual-container,
+.result-container{
+    border: 2px solid rgba(255, 255, 255, 0.26);
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+
+.inputs-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.insert-number-input{
+    display: flex;
+    align-items: center;
+}
+.insert-number-input input{
+    margin: 0 5px;
+    padding: 0 5px;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    color: black;
+}
+.anbutton{
+    background-color: white;
+    color: black;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.visual-box{
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    color: white;
+    overflow-y: scroll;
+}
+.visual-box::-webkit-scrollbar{
+    display: none;
+}
+.visual-box p{
+    font-size: .8em;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+}
+.vibutton{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    width: 180px;
+    height: 40px;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+}
+.anbutton:hover, .vibutton:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.582);
+}
