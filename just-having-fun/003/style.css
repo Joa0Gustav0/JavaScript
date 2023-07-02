@@ -11,7 +11,7 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(30, 41, 59);
+    background-color: #1b1530;
 }
 
 .login-card{
@@ -43,6 +43,9 @@ body{
 }
 .login-header{
     text-align: center;
+}
+.login-header h1{
+    font-size: 1.9em;
 }
 .login-header p{
     color: #e8edfc9c;
@@ -119,10 +122,21 @@ body{
     top: 115%;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 320px;
+    font-size: .8em;
 }
-
+.alternative-socials p{
+    text-align: center;
+    margin: 5px 0;
+    color: #e8edfc85;
+}
+.social-icons{
+    display: flex;
+}
 .alternative-socials a{
     padding: 10px;
     margin: 0 10px;
@@ -172,6 +186,7 @@ body{
     text-align: center;
     border-radius: 0px 15px 15px 0px;
     overflow-y: hidden;
+    cursor: pointer;
 }
 
 .grape-tab-container{
