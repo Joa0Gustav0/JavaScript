@@ -173,7 +173,7 @@ body{
     height: 100vh;
 
     transform: translateY(-50%);
-    left: -80%;
+    left: -90%;
     top: 50%;
 }
 .hookers{
@@ -181,58 +181,107 @@ body{
     left: 100%;
     transition: .3s;
     color: #E8EDFC;
-    height: 50px;
+    height: 40px;
     padding: 10px;
     text-align: center;
     border-radius: 0px 15px 15px 0px;
     overflow-y: hidden;
     cursor: pointer;
 }
-
-.grape-tab-container{
-    background-color: slateblue;
+.hookers ion-icon{
+    width: 22.5px;
+    height: 22.5px;
 }
-.grape-tab-hooker{
-    background-color: slateblue;
+
+.classes-tab-container{
+    background-color: #4D3D87;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.classes-tab-hooker{
+    background-color: #4D3D87;
     top: 2.5%;
 }
-.grape-tab-hooker:hover{
+.classes-tab-hooker:hover{
     transition: .3s;
-    height: 182px;
+    height: 270px;
 }
+.classes-status-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-.cherry-tab-container{
-    background-color: #ff0050;
+    color: #E8EDFC;
+    padding: 10px 0;
+    margin-top: 10px;
 }
-.cherry-tab-hooker{
-    background-color: #ff0050;
-    top: 9.5%;
+.classes-status-container h1{
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E8EDFC;
 }
-.cherry-tab-hooker:hover{
-    transition: .3s;
-    height: 207px;
+.classes-status-content h2{
+    margin-top: 15px;
 }
+.classes-status-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.classes-cards-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.kiwi-tab-container{
-    background-color: #65df46;
-}
-.kiwi-tab-hooker{
-    background-color: #65df46;
-    top: 16.5%;
-}
-.kiwi-tab-hooker:hover{
-    transition: .3s;
-    height: 152px;
-}
+    background-color: #282046;
+    width: 270px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
 
-.banana-tab-container{
-    background-color: #ffbb00;
 }
-.banana-tab-hooker{
-    background-color: #ffbb00;
-    top: 23.5%;
+.class-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: #E8EDFC;
+    background-color: #4D3D87;
+    width: 250px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.192);
 }
-.banana-tab-hooker:hover{
-    transition: .3s;
-    height: 207px;
+.class-card ion-icon{
+    transition: .25s;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 100%;
+}
+.class-card-button:hover{
+    transition: .25s;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.342);
+    transform: scale(110%, 110%);
+}
+.class-card-button:active{
+    transform: scale(100%, 100%);
+    box-shadow: none;
+}
+.finish-class-card-button:hover{
+    transition: .25s;
+    color: rgb(159, 250, 23);
+}
+.delete-class-card-button:hover, 
+.wrong-class-card-button:hover{
+    transition: .25s;
+    color: rgb(255, 40, 40);
 }

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>FruitS - Home</title>
+    <title>Classy - Home</title>
 </head>
 <body>
     <div class="login-card">
         <img src="./media/landing-page-picture.png" width="200px">
         <div class="login-inputs">
             <div class="login-header">
-                <h1>Welcome to LupeS</h1>
+                <h1>Welcome to Classy</h1>
                 <p>It's time to sign-up!</p>
             </div>
             <div class="login-main">
@@ -48,37 +48,39 @@
         </div>
     </div>
 
-    <div class="grape-tab-container tabs">
-        <div class="grape-tab-hooker hookers">
-            <img src="./media/grape-hooker.png" width="30px">
+    <div class="classes-tab-container tabs">
+        <div class="classes-tab-hooker hookers" onclick="controlTab(this)">
+            <ion-icon name="book"></ion-icon>
             <p>
-                G<br>R<br>A<br>P<br>E
+                O<br>
+                R<br>       
+                G<br>
+                A<br>
+                N<br>
+                I<br>
+                Z<br>
+                E<br>
+                R<br>
             </p>
         </div>
-    </div>
-    <div class="cherry-tab-container tabs">
-        <div class="cherry-tab-hooker hookers">
-            <img src="./media/cherry-hooker.png" width="30px">
-            <p>
-                C<br>H<br>E<br>R<br>R<br>Y
-            </p>
-        </div>
-    </div>
-    
-    <div class="kiwi-tab-container tabs">
-        <div class="kiwi-tab-hooker hookers">
-            <img src="./media/kiwi-hooker.png" width="30px">
-            <p>
-                K<br>I<br>W<br>I
-            </p>
-        </div>
-    </div>
-    <div class="banana-tab-container tabs">
-        <div class="banana-tab-hooker hookers">
-            <img src="./media/banana-hooker.png" width="30px">
-            <p>
-                B<br>A<br>N<br>A<br>N<br>A
-            </p>
+
+        <div class="classes-status-container">
+            <h1>Classes</h1>
+            <div class="classes-status-content">
+                <h2>Pendent classes</h2>
+                <div class="pendent-classes classes-cards-box">
+                    <div class="class-card">
+                        <ion-icon name="trash-bin" class="delete-class-card-button class-card-button" onclick="deleteClass(this)"></ion-icon>
+                        <p>
+                            class-name
+                        </p>
+                        <ion-icon name="checkmark-sharp" class="finish-class-card-button class-card-button" onclick="finishClass(this)"></ion-icon>
+                    </div>
+                </div>
+                <h2>Finished classes</h2>
+                <div class="finished-classes classes-cards-box">
+                </div>
+            </div>
         </div>
     </div>
 
