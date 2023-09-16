@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Functions</title>
+</head>
+<body>
+    <script>
+        const authUsers = [{name: "Pedro", authCode: "ID35678"}, {name: "Jonathan", authCode: "ID8789"}, {name: "Jolene", authCode: "ID666"}]
+
+        const inputAuthName = "Jolene"
+        const inputAuthCode = "ID666"
+
+        var currentI = undefined
+        const authNameValidationProcess = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                currentI = undefined
+                for (var i = 0; i < authUsers.length; i++){
+                    if (authUsers[i].name == inputAuthName){
+                        currentI = i
+                    }
+                }
+                if (currentI != undefined){
+                    resolve('inputAuthNameValidationStatus: valid')
+                }
+                else if (currentI == undefined){
+                    reject('inputAuthNameValidationStatus: invalid')
+                }
+            }, 1000)
+        })
+        const authCodeValidationProcess = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (currentI != undefined){
+                    if (authUsers[currentI].authCode == inputAuthCode){
+                        resolve('inputAuthCodeValidationStatus: valid')
+                    }
+                    else{
+                        reject('inputAuthCodeValidationStatus: invalid')    
+                    }
+                }else{
+                    reject('inputAuthCodeValidationStatus: nonOcurringValidationProcess') 
+                }
+            }, 2000)
+        })
+
+        async function validateAuth(){
+            console.log('authValidationStatus: initialized')
+            await authNameValidationProcess
+            .then((data) => {
+                console.log(data)
+            })
+            .catch((dataErr) => {
+                console.log(dataErr)
+            })
+            await authCodeValidationProcess
+            .then((data) => {
+                console.log(data)
+            })
+            .catch((dataErr) => {
+                console.log(dataErr)
+            })
+            console.log('authValidationStatus: finalized')
+        }
+        validateAuth()
+    </script>
+</body>
+</html>
