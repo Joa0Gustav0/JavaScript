@@ -75,7 +75,7 @@ const numberArray = [57, 12, 16, 29, 18, 33, 15]
 
 var result = numberArray.filter((elem, i, array) => elem >= 16 && elem <= 32)
 
-console.log(result)*/
+console.log(result)
 
 //reduce()
 //reduces array's values into a unic one. Concatenate values.
@@ -114,3 +114,27 @@ console.log(middleAgeCostumers)
 console.log("This costumers are at third age:")
 console.log(thirdAgeCostumers)
 console.log("The total number of buying by the current costumers is: " + totalShopNum)
+
+//every()
+//returns a boolean value if all the array's elements pass a logic test
+//Ex.1:
+const MyArray = [57, 87, 23, 94]
+console.log(MyArray.every((elem) => elem < 60))
+
+//Ex.2:
+const people =
+[
+    {name: "Rose", age: 27},
+    //{name: "Sara", age: 16},
+    {name: "Karol", age: 64},
+    {name: "Jorge", age: 37},
+    {name: "Gangplank", age: 70},
+    //{name: "Jenice", age: 17}
+]
+
+if (people.every((elem) => elem.age > 18)){
+    console.log("All the people are over 18.")
+}else{
+    console.log("Some people are not over 18")
+}
+*/
