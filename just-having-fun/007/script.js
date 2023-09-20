@@ -170,4 +170,21 @@ const programmers =
 
 var selectedProgrammer = programmers.find((elem) => elem.age < 18)
 console.log(`The selected programmer is: ${selectedProgrammer.name}`)
+
+//findIndex()
+//Ex.1:
+const users =
+[
+    {name: "Rose", age: 27},
+    {name: "Sara", age: 16},
+    {name: "Karol", age: 64},
+    {name: "Jorge", age: 37},
+    {name: "Gangplank", age: 70},
+    {name: "Jenice", age: 17}
+]
+
+var userIndex = users.findIndex((elem) => elem.age >= 60)
+console.log("Current user is: " + users[userIndex].name)
+console.log("Previous user is: " + users[userIndex - 1].name)
+console.log("Next user is: " + users[userIndex + 1].name)
 */
