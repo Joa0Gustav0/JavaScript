@@ -137,4 +137,22 @@ if (people.every((elem) => elem.age > 18)){
 }else{
     console.log("Some people are not over 18")
 }
+
+//some()
+//Ex.1:
+const students =
+[
+    {name: "Rose", age: 27},
+    {name: "Sara", age: 16},
+    {name: "Karol", age: 64},
+    {name: "Jorge", age: 37},
+    {name: "Gangplank", age: 70},
+    {name: "Jenice", age: 17}
+]
+
+if (students.some((elem) => elem.age > 18)){
+    console.log("Some people are over 18.")
+}else{
+    console.log("Nobody is over 18")
+}
 */
